@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="form-wrapper">
+          <div class="input-wrapper">
+            <label for="day">Day</label>
+            <input type="number" name="day" id="day" placeholder="DD" />
+            <p class="d-none error-message">The field is required</p>
+          </div>
+          <div class="input-wrapper">
+            <label for="month">Month</label>
+            <input type="number" name="month" id="month" placeholder="MM" />
+            <p class="d-none error-message">The field is required</p>
+          </div>
+          <div class="input-wrapper">
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year" placeholder="YYYY" />
+            <p class="d-none error-message">The field is required</p>
+          </div>
+        </div>
+        <div class="divider">
+          <div></div>
+          <button class="btn">
+            <img src="./assets/images/icon-arrow.svg" alt="" srcset="" />
+          </button>
+          <div class="hidden"></div>
+        </div>
+        <div class="display-text">
+          <p><span class="year">- - </span>years</p>
+          <p><span class="month">- - </span>months</p>
+          <p><span class="day">- - </span>days</p>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(./assets/fonts/Poppins-Regular.ttf) format("trueType");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf) format("trueType");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(./assets/fonts/Poppins-Bold.ttf) format("trueType");
+  font-weight: 700;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
+body {
+  background: hsl(0, 0%, 94%);
+  font-family: "Poppins";
+}
+label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 8px;
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+}
+input {
+  padding: 8px 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 86%);
+}
+input,
+input::placeholder {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid hsl(259, 100%, 65%);
+}
+img {
+  width: 100%;
+}
+button {
+  background-color: hsl(259, 100%, 65%);
+  cursor: pointer;
+  border: none;
+  padding: 20px;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+button:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.main {
+  padding: 50px 30px;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+
+  border-radius: 20px 20px 150px 20px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 auto;
+  width: 60%;
+}
+.form-wrapper {
+  display: flex;
+}
+.input-wrapper {
+  width: 100px;
+  margin-right: 10px;
+  /* padding-bottom: 20px; */
+}
+.d-none {
+  display: none;
+}
+.error-message {
+  font-size: 8px;
+  margin-top: 5px;
+  color: hsl(0, 100%, 67%);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+}
+.divider div {
+  width: 100%;
+  border-top: 2px solid hsl(0, 0%, 86%);
+}
+
+.hidden {
+  display: none;
+}
+.display-text {
+  font-size: 40px;
+  font-weight: 800;
+}
+.display-text span {
+  color: hsl(259, 100%, 65%);
+}
+@media (max-width: 850px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 770px) {
+  input,
+  input::placeholder {
+    font-size: 15px;
+  }
+  .divider {
+    margin: 20px 0 30px;
+  }
+  .hidden {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+  .display-text {
+    font-size: 30px;
+  }
+}
